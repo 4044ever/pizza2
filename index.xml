@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brian&#39;s Baguette</title>
+      <link>/brians-baguette/</link>
+      <pubDate>Thu, 23 Sep 2021 21:16:28 +0800</pubDate>
+      
+      <guid>/brians-baguette/</guid>
+      <description>Brian&#39;s Baguettes There are many baguette recipes only, many bad ones, many good ones. From the many good ones I picked Brian&amp;rsquo;s. It&amp;rsquo;s easy, straight forward, and most importantly it makes really good baguettes!
+Some notes from my side=&amp;gt; The poolish is essential! The poolish will give you the amazing taste. The water content you really need to ajust to your flour! 1% can make a difference. Very soft/sticky dough is not nice to work with and can be very difficult to shape.</description>
+    </item>
+    
+    <item>
+      <title>Pizza Pizza Pizza!</title>
+      <link>/pizza/</link>
+      <pubDate>Sat, 18 Sep 2021 23:10:08 +0800</pubDate>
+      
+      <guid>/pizza/</guid>
+      <description>Pizza Calculator Here is your pizza dough calculator for Neapolitan style hand shaped pizza.
+The recipe will adjust depending on how many pizza you plan to make, and how much gram dough per piece. For a ⌀~25-30cm/10-12&amp;quot; pizza I typically use 250g.
+After you put the dough in the fridge you can leave it there for a few days. Taste is getting better after 1 day, 1-3 days is the optimum.</description>
+    </item>
+    
+  </channel>
+</rss>
