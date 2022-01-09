@@ -360,7 +360,7 @@
          alt="Brötchen" width="50%"/>
 </figure>
 
-<p>##Also los geht&rsquo;s&hellip;&hellip;.</p>
+<h2 id="also-los-gehts">Also los geht&rsquo;s&hellip;.</h2>
 <div class="grid-container">
   <div class="grid-item">Wie viele Brötchen sollen es werden?</div>
   <div class="grid-item"><input type="number" id="howMany" name="howMany" value="12" onkeyup="showMsg()">Stück</div>
@@ -372,7 +372,7 @@
   <div class="grid-item"><input type="number" id="water" name="water" value="60" onkeyup="showMsg()">%</div>
   <div class="grid-item">Salz (Standart 2%)</div>
   <div class="grid-item"><input type="number" id="salt" name="salt1" value="2" onkeyup="showMsg()">%</div>
-  <div class="grid-item">Hefe (typically 0.80% dry yeast)</div>
+  <div class="grid-item">Hefe (normal 0.80% Trockenhefe)</div>
   <div class="grid-item"><input type="number" id="yeast" name="yeast" value="0.80" onkeyup="showMsg()">%</div>
 </div>
 <p><span id="intro"><p></span>
@@ -387,6 +387,23 @@ Den ganzen Vorteig<br>
 <span id="Salt"></span><br>
 <span id="Yeast"></span><br>
 <span id="More"></span><br></p>
+<hr>
+Hier ist mein Zeitplan f&uuml;r Sonntagsbrötchen:
+<p><strong>Freitag, morgens:</strong><br>
+Morgens mische ich kurz den Vorteig mit einem Löffel von Hand. Nur soweit dass alles nass ist. Klumpen sind kein Problem. Das stelle ich dann abgedeckt an einen warmen Ort. Der Vorteig wird sich mindestens verdoppeln - das Gefäss sollte also ausrechend gross sein.
+Es wird am Ende voller Blasen sein und sauer riechen - so soll auch sein!</p>
+<p><strong>Freitag, abends:</strong><br>
+Ich knete kurz und grob zusammen, Vorteig, Mehl und Wasser. Wenn alles nass ist bleibt der Teig eine Stunde abgedeckt stehen. Das nennt sich Autolyse. In der Zeit baut sich schon das Gluten auf und man bracht später weniger kneten.
+Dann kneten, erst die Hefe zugeben, und gegen Ende das Salz. Ich knete ca. 5 Minuten.</p>
+<p>Dann geht der Teig in eine flache Schüssel und ich ziehe und falte ca. alle 20 Minuten, für ca. 1,5 bis 2 Stunden. Der Teig sollte schon etwas anspringen und sich ein wenig vergrössern.
+Dann geht der Teig abgedeckt, am besten in einem verschlossenen Container in den Kühlschrank - bis Sonntag!</p>
+<p><strong>Sonntag:</strong><br>
+Direkt aus dem Kühlschrank steche ich die Teiglinge ab, forme eine Kugel. Wer will kann nun mit Mohn, Sesam usw. bestreuen. Dann lasse ich die Teiglinge direkt auf dem Blech noch ca. 40 Minuten ruhen.<br>
+Dann kommt der Einschnitt (wenn Teig am Messer klebt war der Wasseranteil noch zu hoch, also 1-2% weniger das nächste mal)<br>
+Backen:<br>
+230°C Ober/Unterhitze - mit Dampf - 8 Minuten<br>
+200°C Ober/Unterhitze - OHNE Dampf - 8 Minuten</p>
+<p>Dauert zwar lange, der eigentliche Arbeiteinsatz ist aber minimal - und geschmacklich cwird es sich lohnen!</p>
 <script type="text/javascript">
 window.addEventListener( "load", showMsg());
 function showMsg(){
@@ -397,8 +414,7 @@ function showMsg(){
   var water   = document.getElementById('water').valueAsNumber;
   var yeast   = document.getElementById('yeast').valueAsNumber;
   var salt    = document.getElementById('salt').valueAsNumber;
-  let myText = "<p><hr><p>Die genaue Erklaerung kommt noch...</p>";
-
+  let myText = "";
 
 // calculate and send data to span
   document.getElementById('intro').innerHTML = 'Du m&ouml;chstest also '+ many + ' Brötchen &aacute; ' + weight + 'g machen, folgendes brauchst du dazu::<p>';
