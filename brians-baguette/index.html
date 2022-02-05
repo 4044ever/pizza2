@@ -383,11 +383,12 @@ Brian said malt is optional, yes, true - but malt does make a big difference and
   <div class="grid-item">Yeast (typically 0.40% dry yeast)</div>
   <div class="grid-item"><input type="number" id="yeast" name="yeast" value="0.40" onkeyup="showMsg()">%</div>
 </div>
-<p><span id="intro"><p></span>
-<strong>Poolish:</strong><br>
+<p><span id="intro"><p></span></p>
+<p><strong>Poolish:</strong><br>
 <span id="pFlour"></span><br>
 <span id="pWater"></span><br>
 A pinch of yeast</p>
+<p><em><span id="totals"></span></p></em></p>
 <p><strong>Main Dough</strong><br>
 All of the poolish<br>
 <span id="Flour"></span><br>
@@ -395,11 +396,13 @@ All of the poolish<br>
 <span id="Salt"></span><br>
 <span id="Malt"></span><br>
 <span id="Yeast"></span><br>
+<span id="toti"></span><br>
 <span id="More"></span><br></p>
 <script type="text/javascript">
 window.addEventListener( "load", showMsg());
 function showMsg(){
 
+// data from form
   var many    = document.getElementById('howMany').valueAsNumber;
   var weight  = document.getElementById('weight').valueAsNumber;
   var water   = document.getElementById('water').valueAsNumber;
@@ -407,21 +410,22 @@ function showMsg(){
   var malt    = document.getElementById('malt').valueAsNumber;
   var salt    = document.getElementById('salt').valueAsNumber;
   let myText = "<p><hr><p>Mix the poolish roughly, cover it, let it rest in a warm place for 8~12 hours. You really just need a pinch of yeast. If it smells sour - it's good!</p><p>When the poolish is ready, mix all ingrediencies (including the poolish) till smooth. -------- Will update it later. Please take the method from Brian's video.";
-
-
-
+ 
+// calculate and send data to span
   document.getElementById('intro').innerHTML = 'So you want to make '+ many + ' baguettes of ' + weight + 'g each, here is what you need:<p>';
+  document.getElementById('totals').innerHTML = 'In case you use a different poolish/pre-ferment ratio, note the totals: <span id=totFlour></span> and  <span id="totWater"></span>';
+  document.getElementById('pFlour').innerHTML = 'Flour: ' + ((many*weight) * 0.16).toFixed(0) + 'g';
+  document.getElementById('pWater').innerHTML = 'Water: ' + ((many*weight) * 0.16).toFixed(0) + 'g';
+  document.getElementById('totFlour').innerHTML = 'Flour ' + (((many*weight) / (100 + water) * 100)  ).toFixed(0) + 'g';
+  document.getElementById('totWater').innerHTML = 'Water ' + ((many*weight) / (100 + water) * (water) ).toFixed(0) + 'g';
+  document.getElementById('Flour').innerHTML  = 'Flour: ' + (((many*weight) / (100 + water) * 100) - ((many*weight) * 0.16)  ).toFixed(0) + 'g';
 
 
-document.getElementById('pFlour').innerHTML = 'Flour: ' + ((many*weight) * 0.16).toFixed(0) + 'g';
-document.getElementById('pWater').innerHTML = 'Water: ' + ((many*weight) * 0.16).toFixed(0) + 'g';
-
-  document.getElementById('Flour').innerHTML = 'Flour: ' + (((many*weight) / (100 + water) * 100) - ((many*weight) * 0.16)  ).toFixed(0) + 'g';
-  document.getElementById('Water').innerHTML = 'Water: ' + ((many*weight) / (100 + water) * (water - 0) - ((many*weight) * 0.16)).toFixed(0) + 'g';
-  document.getElementById('Salt').innerHTML = 'Salt: ' + (((many*weight) / (100 + water) * 100)/100 * salt).toFixed(1) + 'g';
-  document.getElementById('Malt').innerHTML = 'Malt: ' + (((many*weight) / (100 + water) * 100)/100 * malt).toFixed(1) + 'g';
-  document.getElementById('Yeast').innerHTML = 'Yeast: ' + (((many*weight) / (100 + water) * 100)/100 * yeast).toFixed(2) + 'g (dry yeast)';
-  document.getElementById('More').innerHTML = myText;
+  document.getElementById('Water').innerHTML  = 'Water: ' + ((many*weight) / (100 + water) * (water - 0) - ((many*weight) * 0.16)).toFixed(0) + 'g';
+  document.getElementById('Salt').innerHTML   = 'Salt: ' + (((many*weight) / (100 + water) * 100)/100 * salt).toFixed(1) + 'g';
+  document.getElementById('Malt').innerHTML   = 'Malt: ' + (((many*weight) / (100 + water) * 100)/100 * malt).toFixed(1) + 'g';
+  document.getElementById('Yeast').innerHTML  = 'Yeast: ' + (((many*weight) / (100 + water) * 100)/100 * yeast).toFixed(2) + 'g (dry yeast)';
+  document.getElementById('More').innerHTML   = myText;
   }
 </script>
 <script>
@@ -430,6 +434,7 @@ document.write(weight);
 document.write(water);
 document.write(malt);
 document.write(yeast);
+document.write(totFlour);
 </script>
 <style type="text/css">
 input {
@@ -473,7 +478,7 @@ input[type="number"] {
 </article>
 
 		</main>
-		<footer class="footer"><div class="footer__copyright">© Amperage 2021</div><div class="footer__languages">
+		<footer class="footer"><div class="footer__copyright">© Amperage 2022</div><div class="footer__languages">
 	
 </div></footer>
 		
