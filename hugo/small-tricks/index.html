@@ -15,7 +15,7 @@
 <meta property="og:description" content>
 <meta name=twitter:description content>
 <meta name=robots content="index,follow">
-<link rel=stylesheet href="/css/style.min.0ab354e2727b29bbee241ab598b26e366758fbcee760d021473d6d203706d1fb.css" integrity="sha256-CrNU4nJ7KbvuJBq1mLJuNmdY+87nYNAhRz1tIDcG0fs=">
+<link rel=stylesheet href="/css/style.min.c595000f6f87de29968d65b528c3b72d7df3f34c45ad886eaec49288810180f3.css" integrity="sha256-xZUAD2+H3imWjWW1KMO3LX3z80xFrYhursSSiIEBgPM=">
 </head>
 <body>
 <div class=bg-gray-100>
@@ -78,6 +78,15 @@
 <p>The classic Youtube shortcode:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go-html-template data-lang=go-html-template><span style=color:#75715e>{{</span><span style=color:#960050;background-color:#1e0010>&lt;</span> <span style=color:#a6e22e>youtube</span> <span style=color:#a6e22e>w7Ft2ymGmfc</span> <span style=color:#960050;background-color:#1e0010>&gt;</span><span style=color:#75715e>}}</span></code></pre></div>
 <hr>
+<p>Open external link in a new tab.
+Typically you want external links to open in a new tab. Very easy!</p>
+<ol>
+<li>Create <code>layouts/_default/_markup/render-link.html</code></li>
+<li>Add this line:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go-html-template data-lang=go-html-template>&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>.Destination</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>safeURL</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&#34;</span><span style=color:#75715e>{{</span> <span style=color:#66d9ef>with</span> <span style=color:#a6e22e>.Title</span><span style=color:#75715e>}}</span> <span style=color:#a6e22e>title</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span><span style=color:#75715e>{{</span> <span style=color:#a6e22e>.</span> <span style=color:#75715e>}}</span><span style=color:#e6db74>&#34;</span><span style=color:#75715e>{{</span> <span style=color:#66d9ef>end</span> <span style=color:#75715e>}}{{</span> <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>strings</span><span style=color:#a6e22e>.HasPrefix</span> <span style=color:#a6e22e>.Destination</span> <span style=color:#e6db74>&#34;http&#34;</span> <span style=color:#75715e>}}</span> <span style=color:#a6e22e>target</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;_blank&#34;</span><span style=color:#75715e>{{</span> <span style=color:#66d9ef>end</span> <span style=color:#75715e>}}</span>&gt;<span style=color:#75715e>{{</span> <span style=color:#a6e22e>.Text</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>markdownify</span> <span style=color:#75715e>}}</span>&lt;/<span style=color:#f92672>a</span>&gt;</code></pre></div></li>
+</ol>
+<p>That&rsquo;s all!</p>
+<p>Axternal links will open in a new tab > <a href="https://agrimprasad.com/post/hugo-goldmark-markdown/#:~:text=Thus%2C%20if%20you%20want%20to,_blank%22%20attribute%20to%20the%20links." target=_blank>Source & Credit</a> - and local links will open in the same tab > <a href=/broetchen/>broetchen</a></p>
 </article>
 </div>
 <div class="bg-white rounded-md w-fixed text-2xl text-left my-2">
