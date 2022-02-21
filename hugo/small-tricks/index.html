@@ -4,11 +4,11 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=preload href=/css/page.css as=style>
 <meta http-equiv=x-ua-compatible content="IE=edge">
-<title itemprop=name>Hard Rolls | Hugo & Tailwind 3.0 & Pizza</title>
-<meta property="og:title" content="Hard Rolls | Hugo & Tailwind 3.0 & Pizza">
-<meta name=twitter:title content="Hard Rolls | Hugo & Tailwind 3.0 & Pizza">
-<meta itemprop=name content="Hard Rolls | Hugo & Tailwind 3.0 & Pizza">
-<meta name=application-name content="Hard Rolls | Hugo & Tailwind 3.0 & Pizza">
+<title itemprop=name>Small Tricks | Hugo & Tailwind 3.0 & Pizza</title>
+<meta property="og:title" content="Small Tricks | Hugo & Tailwind 3.0 & Pizza">
+<meta name=twitter:title content="Small Tricks | Hugo & Tailwind 3.0 & Pizza">
+<meta itemprop=name content="Small Tricks | Hugo & Tailwind 3.0 & Pizza">
+<meta name=application-name content="Small Tricks | Hugo & Tailwind 3.0 & Pizza">
 <meta property="og:site_name" content>
 <meta name=description content>
 <meta itemprop=description content>
@@ -61,14 +61,23 @@
 <div class="md:flex clearfix">
 <div class="clearfix flex-grow md:w-5/6 bg-white rounded-md mr-2 my-2 p-5">
 <div class="mx-5 prose max-w-fit px-0 lg:px-16">
-<h1>Hard Rolls</h1>
+<h1>Small Tricks</h1>
 </div>
 <article class="mt-4 mx-5 prose max-w-fit px-0 lg:px-16">
-<h1>This is not a baking site</h1>
-<p>No, this is not a baking site. Yes, I bake things, but this site is more about webdesign with <a href=https://gohugo.io>Hugo</a>, a static site generator.</p>
-<p>So mostly I use this site for testing things, different designs, different codes etc. It makes it convenient to put some recipes I use online.</p>
-<p>Certain things, like pizza and baguettes, I like to scale. When you have a pre-ferment or sourdough the calculations become a bit annoying. And specially for baguettes and pizza sometimes I want smaller, or bigger - hence a recipe where you input what you want and have the numbers ready is very helpful to me. And hopefully to some others too.</p>
-<p>Enjoy it and let me know if you like it.</p>
+<p>A few small tricks not really worth having their own page:</p>
+<details class="p-3 rounded-lg">
+<summary class=leading-6>Expand on click (yes you need to click here) </summary>
+<div class=mt-3>
+<p class=text-blue-800>You can do that simply and JS free with that structure:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>  &lt;<span style=color:#f92672>details</span>&gt;  
+  &lt;<span style=color:#f92672>summary</span>&gt;Some Header&lt;/<span style=color:#f92672>summary</span>&gt;  
+  &lt;<span style=color:#f92672>div</span>&gt;Some hidden text&lt;/<span style=color:#f92672>div</span>&gt;  
+  &lt;/<span style=color:#f92672>details</span>&gt;</code></pre></div>
+</p></div></details>
+<hr>
+<p>The classic Youtube shortcode:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go-html-template data-lang=go-html-template><span style=color:#75715e>{{</span><span style=color:#960050;background-color:#1e0010>&lt;</span> <span style=color:#a6e22e>youtube</span> <span style=color:#a6e22e>w7Ft2ymGmfc</span> <span style=color:#960050;background-color:#1e0010>&gt;</span><span style=color:#75715e>}}</span></code></pre></div>
+<hr>
 </article>
 </div>
 <div class="bg-white rounded-md w-fixed text-2xl text-left my-2">
