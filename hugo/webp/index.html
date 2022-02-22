@@ -66,9 +66,10 @@
 <article class="mt-4 mx-5 prose max-w-fit px-0 lg:px-16">
 <p>Convert automatically your JPG/PNG/GIF to the small *.webp format!</p>
 <p>On websites you want to keep your image size as small as possible. webp is an extremely small, space saving, format. However, not all browsers can handle it.</p>
-<p>On your *.md page you ad your existing image in this format:</p>
+<p>On your *.md page you add your existing image in this format:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go-html-template data-lang=go-html-template><span style=color:#75715e>{{</span><span style=color:#960050;background-color:#1e0010>&lt;</span> <span style=color:#a6e22e>picture</span> <span style=color:#a6e22e>path</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;sample.jpg&#34;</span> <span style=color:#960050;background-color:#1e0010>&gt;</span><span style=color:#75715e>}}</span> /* minimal! - or full:
 <span style=color:#75715e>{{</span><span style=color:#960050;background-color:#1e0010>&lt;</span> <span style=color:#a6e22e>picture</span> <span style=color:#a6e22e>path</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;sample.jpg&#34;</span> <span style=color:#a6e22e>alt</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;My image&#34;</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;300&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;150&#34;</span> <span style=color:#960050;background-color:#1e0010>&gt;</span><span style=color:#75715e>}}</span></code></pre></div>
+<p>The source image should be <code>assets/images/</code> and <strong>not</strong> in <code>static/uploads/</code> etc</p>
 <details>
 <summary class=text-xl>layouts/shortcodes/picture.html</summary>
 <div>
@@ -138,6 +139,8 @@
   &lt;<span style=color:#f92672>img</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/sample_hu1c281d6ad96666827d571a3c8f40b864_327575_300x400_fit_q75_bgffffff_box_3.jpg&#34;</span> <span style=color:#a6e22e>alt</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;My image&#34;</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;300&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;225&#34;</span>&gt;
 &lt;/<span style=color:#f92672>picture</span>&gt;</code></pre></div>
 <p>Credits and thanks to <a href=https://discourse.gohugo.io/u/jmooring target=_blank>jmooring</a>, from this <a href=https://discourse.gohugo.io/t/has-anyone-a-webp-shortcode/35391 target=_blank>source</a></p>
+<div id=graphcomment></div>
+<script type=text/javascript>var __semio__params={graphcommentId:"Scale-Pizza",behaviour:{}};function __semio__onload(){__semio__gc_graphlogin(__semio__params)}(function(){var a=document.createElement('script');a.type='text/javascript',a.async=!0,a.onload=__semio__onload,a.defer=!0,a.src='https://integration.graphcomment.com/gc_graphlogin.js?'+Date.now(),(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script>
 </article>
 </div>
 <div class="bg-white rounded-md w-fixed text-2xl text-left my-2">
