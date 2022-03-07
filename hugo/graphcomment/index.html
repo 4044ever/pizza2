@@ -4,8 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=preload href=/css/page.css as=style>
 <meta http-equiv=x-ua-compatible content="IE=edge">
-<title itemprop=name>GraphComment | Hugo & Tailwind 3.0 & Pizza</title>
-<meta property="og:title" content="GraphComment | Hugo & Tailwind 3.0 & Pizza">
+<title itemprop=name>GraphComment | Hugo & Tailwind 3.0 & Pizza</title><meta property="og:title" content="GraphComment | Hugo & Tailwind 3.0 & Pizza">
 <meta name=twitter:title content="GraphComment | Hugo & Tailwind 3.0 & Pizza">
 <meta itemprop=name content="GraphComment | Hugo & Tailwind 3.0 & Pizza">
 <meta name=application-name content="GraphComment | Hugo & Tailwind 3.0 & Pizza">
@@ -16,18 +15,15 @@
 <meta name=twitter:description content>
 <meta name=robots content="index,follow">
 <link rel=stylesheet href="/css/style.min.c595000f6f87de29968d65b528c3b72d7df3f34c45ad886eaec49288810180f3.css" integrity="sha256-xZUAD2+H3imWjWW1KMO3LX3z80xFrYhursSSiIEBgPM=">
-</head>
-<body>
+</head><body>
 <div class=bg-gray-100>
 <div class="flex flex-col m-auto h-auto max-w-screen-2xl">
 <header class=bg-white>
 <div class=py-3>
 <a href=/>
 <div class="text-4xl font-bold px-0 ml-2">
-</div>
-<div class="text-xl font-simibold py-2 ml-2">
-</div>
-</a>
+</div><div class="text-xl font-simibold py-2 ml-2">
+</div></a>
 <div class="py-3 flex items-center justify-center">
 <a href=/>
 <picture>
@@ -36,111 +32,74 @@
 <img src=/uploads/semmellogo.jpg alt="Dark Raw" width=2000 height=256>
 </picture>
 </a>
-</div>
-</div>
-</header>
-<nav class="bg-gray-900 flex text-gray-100 text-lg inline-block z-50">
+</div></div></header><nav class="bg-gray-900 flex text-gray-100 text-lg inline-block z-50">
 <ul class=flex>
 <li class="hover:bg-gray-800 p-4">
 <a href=/>
 <span>Home</span>
 </a>
-</li>
-<li class="hover:bg-gray-800 p-4">
+</li><li class="hover:bg-gray-800 p-4">
 <a href=/hugo>
 <span>Hugo</span>
 </a>
-</li>
-<li class="hover:bg-gray-800 p-4">
+</li><li class="hover:bg-gray-800 p-4">
 <a href=/about>
 <span>About</span>
 </a>
-</li>
-</ul>
-</nav>
-<div class="md:flex clearfix">
+</li></ul></nav><div class="md:flex clearfix">
 <div class="clearfix flex-grow md:w-5/6 bg-white rounded-md mr-2 my-2 p-5">
 <div class="mx-5 prose max-w-fit px-0 lg:px-16">
-<h1>GraphComment</h1>
-</div>
-<article class="mt-4 mx-5 prose max-w-fit px-0 lg:px-16">
-<p>A good alternative for a comment system is <a href=https://graphcomment.com/ target=_blank>GraphComment</a>. Their free tier account is quite useable.</p>
-<p>It&rsquo;s not as cluttered as Disqus.</p>
-<details>
+<h1>GraphComment</h1></div><article class="mt-4 mx-5 prose max-w-fit px-0 lg:px-16">
+<p>A good alternative for a comment system is <a href=https://graphcomment.com/ target=_blank>GraphComment</a>. Their free tier account is quite useable.</p><p>It&rsquo;s not as cluttered as Disqus.</p><details>
 <summary class=text-xl>/layouts/shortcodes/graphcomment.html</summary>
 <div>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;graphcomment&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
-    &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;
-
-    <span style=color:#75715e>/* - - - CONFIGURATION VARIABLES - - - */</span>
-
-    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>__semio__params</span> <span style=color:#f92672>=</span> {
-        <span style=color:#a6e22e>graphcommentId</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;YOUR-GRAPHCOMMENT-PAGE-ID-HERE&#34;</span>, <span style=color:#75715e>// make sure the id is yours
-</span><span style=color:#75715e></span>
-        <span style=color:#a6e22e>behaviour</span><span style=color:#f92672>:</span> {
-        <span style=color:#75715e>// HIGHLY RECOMMENDED
-</span><span style=color:#75715e></span>        <span style=color:#75715e>//  uid: &#34;...&#34;, // uniq identifer for the comments thread on your page (ex: your page id)
-</span><span style=color:#75715e></span>        },
-
-        <span style=color:#75715e>// configure your variables here
-</span><span style=color:#75715e></span>
-    }
-
-    <span style=color:#75715e>/* - - - DON&#39;T EDIT BELOW THIS LINE - - - */</span>
-
-    <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>__semio__onload</span>() {
-        <span style=color:#a6e22e>__semio__gc_graphlogin</span>(<span style=color:#a6e22e>__semio__params</span>)
-    }
-
-
-    (<span style=color:#66d9ef>function</span>() {
-        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>gc</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>createElement</span>(<span style=color:#e6db74>&#39;script&#39;</span>); <span style=color:#a6e22e>gc</span>.<span style=color:#a6e22e>type</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;text/javascript&#39;</span>; <span style=color:#a6e22e>gc</span>.<span style=color:#66d9ef>async</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>;
-        <span style=color:#a6e22e>gc</span>.<span style=color:#a6e22e>onload</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>__semio__onload</span>; <span style=color:#a6e22e>gc</span>.<span style=color:#a6e22e>defer</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>; <span style=color:#a6e22e>gc</span>.<span style=color:#a6e22e>src</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;https://integration.graphcomment.com/gc_graphlogin.js?&#39;</span> <span style=color:#f92672>+</span> Date.<span style=color:#a6e22e>now</span>();
-        (document.<span style=color:#a6e22e>getElementsByTagName</span>(<span style=color:#e6db74>&#39;head&#39;</span>)[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>||</span> document.<span style=color:#a6e22e>getElementsByTagName</span>(<span style=color:#e6db74>&#39;body&#39;</span>)[<span style=color:#ae81ff>0</span>]).<span style=color:#a6e22e>appendChild</span>(<span style=color:#a6e22e>gc</span>);
-    })();
-    &lt;/<span style=color:#f92672>script</span>&gt;
-    </code></pre></div>
-</div>
-</details>
-<p>On your *.md page put this one line of code where you want the comment box to appear:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go-html-template data-lang=go-html-template><span style=color:#75715e>{{</span><span style=color:#960050;background-color:#1e0010>&lt;</span> <span style=color:#a6e22e>graphcomment</span> <span style=color:#960050;background-color:#1e0010>&gt;</span><span style=color:#75715e>}}</span></code></pre></div>
-<div id=graphcomment></div>
-<script type=text/javascript>var __semio__params={graphcommentId:"Scale-Pizza",behaviour:{}};function __semio__onload(){__semio__gc_graphlogin(__semio__params)}(function(){var a=document.createElement('script');a.type='text/javascript',a.async=!0,a.onload=__semio__onload,a.defer=!0,a.src='https://integration.graphcomment.com/gc_graphlogin.js?'+Date.now(),(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script>
-</article>
-</div>
-<div class="bg-white rounded-md w-fixed text-2xl text-left my-2">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;graphcomment&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>/* - - - CONFIGURATION VARIABLES - - - */</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>__semio__params</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>graphcommentId</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;YOUR-GRAPHCOMMENT-PAGE-ID-HERE&#34;</span>, <span style=color:#75715e>// make sure the id is yours
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>behaviour</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// HIGHLY RECOMMENDED
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#75715e>//  uid: &#34;...&#34;, // uniq identifer for the comments thread on your page (ex: your page id)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        },
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// configure your variables here
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>/* - - - DON&#39;T EDIT BELOW THIS LINE - - - */</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>__semio__onload</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>__semio__gc_graphlogin</span>(<span style=color:#a6e22e>__semio__params</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    (<span style=color:#66d9ef>function</span>() {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>gc</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>createElement</span>(<span style=color:#e6db74>&#39;script&#39;</span>); <span style=color:#a6e22e>gc</span>.<span style=color:#a6e22e>type</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;text/javascript&#39;</span>; <span style=color:#a6e22e>gc</span>.<span style=color:#66d9ef>async</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>;
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>gc</span>.<span style=color:#a6e22e>onload</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>__semio__onload</span>; <span style=color:#a6e22e>gc</span>.<span style=color:#a6e22e>defer</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>; <span style=color:#a6e22e>gc</span>.<span style=color:#a6e22e>src</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;https://integration.graphcomment.com/gc_graphlogin.js?&#39;</span> <span style=color:#f92672>+</span> Date.<span style=color:#a6e22e>now</span>();
+</span></span><span style=display:flex><span>        (document.<span style=color:#a6e22e>getElementsByTagName</span>(<span style=color:#e6db74>&#39;head&#39;</span>)[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>||</span> document.<span style=color:#a6e22e>getElementsByTagName</span>(<span style=color:#e6db74>&#39;body&#39;</span>)[<span style=color:#ae81ff>0</span>]).<span style=color:#a6e22e>appendChild</span>(<span style=color:#a6e22e>gc</span>);
+</span></span><span style=display:flex><span>    })();
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>script</span>&gt;
+</span></span><span style=display:flex><span>    </span></span></code></pre></div></div></details>
+<p>On your *.md page put this one line of code where you want the comment box to appear:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go-html-template data-lang=go-html-template><span style=display:flex><span><span style=color:#75715e>{{</span><span style=color:#960050;background-color:#1e0010>&lt;</span> <span style=color:#a6e22e>graphcomment</span> <span style=color:#960050;background-color:#1e0010>&gt;</span><span style=color:#75715e>}}</span></span></span></code></pre></div><div id=graphcomment></div><script type=text/javascript>var __semio__params={graphcommentId:"Scale-Pizza",behaviour:{}};function __semio__onload(){__semio__gc_graphlogin(__semio__params)}(function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.onload=__semio__onload,e.defer=!0,e.src="https://integration.graphcomment.com/gc_graphlogin.js?"+Date.now(),(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script>
+</article></div><div class="bg-white rounded-md w-fixed text-2xl text-left my-2">
 <div class=p-3>
 Recent Posts
-</div>
-<div>
+</div><div>
 <div>
 <div class="text-lg text-left text-blue-700 px-3">
 <div class=mb-3><a href=/hard-rolls/>Hard Rolls</a><br>
-</div>
-<div class=mb-3><a href=/brians-baguette/>Brian's Baguettes</a><br>
-</div>
-<div class=mb-3><a href=/broetchen/>Brötchen</a><br>
-</div>
-<div class=mb-3><a href=/pizza/>Pizza Pizza Pizza!</a><br>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<footer class="max-h-14 bg-gray-800 w-fixed rounded-t-md">
-<div class="flex text-gray-100 justify-center">&copy; 2022 - Bake the Gloom away! </div>
-<div>
-</div>
-</footer>
-<div class="js-cookie-banner fixed sticky bottom-5 bg-black rounded-xl mx-28 h-16">
+</div><div class=mb-3><a href=/brians-baguette/>Brian's Baguettes</a><br>
+</div><div class=mb-3><a href=/broetchen/>Brötchen</a><br>
+</div><div class=mb-3><a href=/pizza/>Pizza Pizza Pizza!</a><br>
+</div></div></div></div></div></div><footer class="max-h-14 bg-gray-800 w-fixed rounded-t-md">
+<div class="flex text-gray-100 justify-center">&copy; 2022 - Bake the Gloom away! </div><div>
+</div></footer><div class="js-cookie-banner fixed sticky bottom-5 bg-black rounded-xl mx-28 h-16">
 <p class="text-gray-100 text-center">
 This site use 🍪cookies. Read more in <a class="text-lg font-bold text-blue-200 hover:underline" href=/cookies-policy/>Cookies Policy</a>.
-</p>
-<button class="js-cookie-btn absolute bottom-0 right-0 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-12 mr-14 mb-1 rounded cursor-pointer">Ok!</button>
-</div>
-<script src=/js/cookie.js async></script>
-</div>
-</div>
-</body>
-</html>
+</p><button class="js-cookie-btn absolute bottom-0 right-0 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-12 mr-14 mb-1 rounded cursor-pointer">Ok!</button>
+</div><script src=/js/cookie.js async></script>
+</div></div></body></html>
