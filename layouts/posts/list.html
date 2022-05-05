@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="">
+    <div class="">
+        <div class="mx-5 prose max-w-fit px-0 lg:px-16 ">
+            <!--     <h1>{{ .Title }}</h1>  -->
+            {{ .Content }}
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {{ range .Pages }}
+            <div class="p-4">
+                <figure class="">
+                    <a href="{{ .Permalink }}">
+                        <picture>
+                            <source srcset="{{ .Params.header_image_wp }}" type="image/webp">
+                            <source srcset="{{ .Params.header_image }}" type="image/jpeg">
+                            <img src="{{ .Params.header_image }}" alt="{{ .Title }}" width="500" height="280" >
+                        </picture>
+                    </a>
+                </figure>
+                <a class="text-xl font-bold text-blue-800 " href="{{ .Permalink }}">{{ .Title }}</a>
+                <div class="text-gray-700 pt-3 ">
+                    {{ .Summary }}
+                    <div class="text-right">
+                        <a class="text-blue-700" href="{{ .Permalink }}">... Read more</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+    </div>
+</div>
+{{ end }}

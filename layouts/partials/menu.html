@@ -1,0 +1,42 @@
+{{- if .Site.Menus.main }}
+<nav class="bg-gray-900 flex text-gray-100 text-lg inline-block z-50">
+	<ul class="flex">
+		{{- $currentNode := . }}
+		{{- range .Site.Menus.main }}
+		{{- if .Name }}
+		{{- if .HasChildren }}
+		<li class="dropdown hover:bg-gray-800 p-4 {{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+			<a class="" href="{{ .URL }}">
+				{{ .Pre }}
+				<span class="">{{ .Name }}</span>
+				<label class="" for="{{ .Name }}">⮟</label>
+				{{ .Post }}
+			</a>
+ 
+			<ul class="dropdown-content filter drop-shadow-xl min-w-max hidden block">
+				{{ range .Children }}
+					<li class=" {{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+					<a class="bg-gray-700 hover:bg-gray-600 text-gray-100 p-3 block" href="{{ .URL }}">
+						{{ .Pre }}
+						<span class=" ">{{ .Name }}</span>
+						{{ .Post }}
+					</a>
+					</li>
+				{{ end }}
+			</ul>
+		</li>
+		{{- else }}
+		<li class="hover:bg-gray-800 p-4 {{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+			<a class="" href="{{ .URL }}">
+				{{ .Pre }}
+				<span class="">{{ .Name }}</span>
+				{{ .Post }}
+			</a>
+		</li>
+		{{- end }}
+		{{- end }}
+		{{- end }}
+	</ul>
+</nav>
+{{ else -}}
+{{- end }}

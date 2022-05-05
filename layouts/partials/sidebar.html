@@ -1,0 +1,20 @@
+<div class="bg-white rounded-md w-fixed text-2xl text-left my-2 ">
+
+    <div class="p-3">
+        Recent Posts
+    </div>
+
+    <div class="">
+        <div class="">
+
+            <div class="text-lg text-left text-blue-700 px-3">
+                {{ range where .Site.RegularPages "Type" "posts" }}
+                <div class="mb-3"><a class="" href="{{ .Permalink }}">{{ .Title }}</a><br>
+                </div>
+                {{ end }}
+            </div>
+
+        </div>
+    </div>
+
+</div>

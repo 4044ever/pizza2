@@ -1,6 +1,113 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Hugo & Tailwind 3.0'
+title = 'Hugo & Tailwind 3.0 & Pizza'
 disableKinds = ["taxonomy","taxonomyTerm"]
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'monokai'
+    tabWidth = 4
+
+[params]
+
+# favicon = "favi.png"
+
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false
+
+   custom_js  = ["js/cookie.js"]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "hugo"
+    name = "Hugo"
+    url = "/hugo"
+    weight = 3
+   [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 5
+ # [[menu.main]]
+ #   identifier = "resources"
+ #   name = "Resources"
+ #  url = "#"
+ #   weight = 2
+ # [[menu.main]]
+ #   identifier = "darktable"
+ #  name = "darktable"
+ #  url = "/darktable"
+ #   parent = "resources"
+ #   weight = 10
+ # [[menu.main]]
+ #   identifier = "rawtherapee"
+ #   name = "RawTherapee & ART"
+ #   url = "/rawtherapee-art"
+ #   parent = "resources"
+ #   weight = 20
+ # [[menu.main]]
+ #   identifier = "others"
+ #   name = "Others"
+ #   url = "/others"
+ #   parent = "resources"
+ #   weight = 30
+ # [[menu.main]]
+ #   identifier = "about"
+ #   name = "About"
+ #   url = "#"
+ #   weight = 100
+ #  [[menu.main]]
+ #   identifier = "about2"
+ #   name = "About"
+ #   url = "/about"
+ #   parent = "about"
+ #   weight = 110
+ # [[menu.main]]
+ #   identifier = "contact"
+ #   name = "Contact"
+ #   url = "/contact"
+ #   parent = "about"
+ #   weight = 120
+ # [[menu.main]]
+ #   identifier = "privacy-policy"
+ #   name = "Privacy Policy"
+ #   url = "/privacy-policy"
+ #   parent = "about"
+ #   weight = 130
 

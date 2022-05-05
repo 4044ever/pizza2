@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html lang="{{ .Language.Lang }}">
+<html lang="{{ .Site.Language.Lang }}">
 <head>
-    {{ partial "head.html" . }}
+  {{ with .OutputFormats.Get "rss" -}}
+  {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+  {{ partial "head.html" . }}
+  {{ with .Params.jquery }} {{/* checks if the parameter exists */}}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  {{end}}
 </head>
 <body>
-{{ block "main" . }}{{ end }}
+  <div class="bg-gray-100 ">
+    <div class="flex flex-col m-auto h-auto max-w-screen-2xl">
+      {{ partial "header.html" . }}
+      {{ partial "menu.html" . }}
+      <div class="md:flex clearfix ">
+        <div class="clearfix flex-grow md:w-5/6 bg-white rounded-md mr-2 my-2 p-5">
+         {{ block "main" . }}     {{ end }}
+        </div>
+
+        {{ partial "sidebar.html" . }}
+      </div>
+      {{ partial "footer.html" . }}
+
+      {{ partial "cookie.html" . }}
+    </div>
+  </div>
 </body>
 </html>
