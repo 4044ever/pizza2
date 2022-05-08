@@ -12,7 +12,7 @@ summary: A German classic - Brötchen! The secret to very good ones is **time** 
 
 A German classic - Brötchen! The secret to very good ones is **time** and a poolish. My Sunday brötchen I start already on Friday. Very important is a "Poolish", a pre-ferment - made from just flour and water in a 1:1 ratio, and a tiny bit yeast. 
 
-{{< figure src="/semmel.jpg" alt="Brötchen" width="50%" >}}
+{{< picture path="images/semmel.jpg" alt="Brötchen" width="500" >}}
 
 ## Let's start....
 
@@ -77,6 +77,10 @@ That setting works well with the Anova APO.
 
 Ok, this takes 2 days, but the actual work is minimal. 
 
+
+{{< notice info >}}
+The word *Br&ouml;tchen* can vary quite a bit with where you are in and around Germany, so get prepared for Semmel, Schrippe, B&uuml;rli (CH), Weckerl (AT) and many more
+{{< /notice >}}
 
 <script type="text/javascript">
 window.addEventListener( "load", showMsg());
