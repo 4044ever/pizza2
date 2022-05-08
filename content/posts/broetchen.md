@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Brötchen
-url: broetchen
+url: de/broetchen
 header_image:  "/uploads/broetchen01.jpg"
 header_image_wp:  "/uploads/broetchen01.webp"
 date: 2021-09-23T13:16:28.000Z
@@ -32,8 +32,8 @@ So mache ich derzeit meine klassischen Brötchen. Das Geheimrezept dabei ist **Z
   <div class="grid-item"><input class="text-blue-700 font-bold" type="number" id="water" name="water" value="60" onkeyup="showMsg()">%</div>
   <div class="grid-item">Salz (Standart 2%)</div>
   <div class="grid-item"><input class="text-blue-700 font-bold" type="number" id="salt" name="salt1" value="2" onkeyup="showMsg()">%</div>
-  <div class="grid-item">Hefe (normal 0.70% Trockenhefe)</div>
-  <div class="grid-item"><input class="text-blue-700 font-bold" type="number" id="yeast" name="yeast" value="0.70" onkeyup="showMsg()">%</div>
+  <div class="grid-item">Hefe (normal 0.60% Trockenhefe)</div>
+  <div class="grid-item"><input class="text-blue-700 font-bold" type="number" id="yeast" name="yeast" value="0.60" onkeyup="showMsg()">%</div>
 </div>
 
  

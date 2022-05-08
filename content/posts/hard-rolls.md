@@ -29,8 +29,8 @@ A German classic - Brötchen! The secret to very good ones is **time** and a poo
   <div class="grid-item"><input class="text-blue-700 font-bold" type="number" id="water" name="water" value="60" onkeyup="showMsg()">%</div>
   <div class="grid-item">Salt (standard 2%)</div>
   <div class="grid-item"><input class="text-blue-700 font-bold" type="number" id="salt" name="salt1" value="2" onkeyup="showMsg()">%</div>
-  <div class="grid-item">Yeast (typically 0.80% dry yeast)</div>
-  <div class="grid-item"><input class="text-blue-700 font-bold" type="number" id="yeast" name="yeast" value="0.80" onkeyup="showMsg()">%</div>
+  <div class="grid-item">Yeast (typically 0.60% dry yeast)</div>
+  <div class="grid-item"><input class="text-blue-700 font-bold" type="number" id="yeast" name="yeast" value="0.60" onkeyup="showMsg()">%</div>
 </div>
 
  
