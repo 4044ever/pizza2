@@ -73,10 +73,11 @@ or if you have convection and steam:
 245°C/475°F hot air - with steam - 3 Minuten  
 235°C/455°F hot air - no steam - 11 Minuten  
 
-That setting works well with the Anova APO.
+I use the [Anova Precision Oven](https://anovaculinary.com/anova-precision-oven/) with folowing settings:  
+Stage 1: 245°C/475°F Rear only - Steam 100% - 3 Minuten  
+Stage 2: 235°C/455°F Rear only - Steam OFF - 11 Minuten  
 
 Ok, this takes 2 days, but the actual work is minimal. 
-
 
 {{< notice info >}}
 The word *Br&ouml;tchen* can vary quite a bit with where you are in and around Germany, so get prepared for Semmel, Schrippe, B&uuml;rli (CH), Weckerl (AT) and many more

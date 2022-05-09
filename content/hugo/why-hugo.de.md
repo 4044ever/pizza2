@@ -2,6 +2,7 @@
 draft: false
 title: "Why Hugo?"
 url: /hugo/why-hugo
+translationKey: "why-hugo.md"
 header_image:  "/uploads/hugo.jpg"
 header_image_wp:  "/uploads/hugo.webp"
 date: 2022-02-20T21:16:28+08:00
@@ -15,5 +16,6 @@ There is also no backend to login to. The backend is so to speak on your PC wher
 ## Why Hugo and not Jeckyll, Gatsby, Eleventy etc?
 That's a personal choice. They are sort of similar in what they are. But Hugo has good recourses, a larger userbase and therefore it's more easy to get help when you get stuck. 
 Hugo also has a large selection of ready-to-start [themes](https://themes.gohugo.io/) and shortcodes. 
+
 
   {{< graphcomment >}} 
