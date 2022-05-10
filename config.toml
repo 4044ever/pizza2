@@ -20,15 +20,16 @@ disableKinds = ["taxonomy","taxonomyTerm"]
     style = 'monokai'
     tabWidth = 4
 
-# DefaultContentLanguage = "en"
-# [languages]
-# [languages.en]
-# languageName = "English"
-# weight = 1
-# [languages.de]
-# languageName = "German"
-# weight = 2
+DefaultContentLanguage = "en"
 
+[languages]
+[languages.en]
+languageName = "English"
+weight = 1
+
+[languages.de]
+languageName = "German"
+weight = 2
 
 [params]
 

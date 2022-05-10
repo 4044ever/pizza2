@@ -1,5 +1,5 @@
-"# pizza"
+Just a personal Hugo site with some baking math to scale pizza,  baguettes etc.
 
-Just a personal page with some baking math to scale pizza and baguettes
+And some Hugo recipes. 
 
 https://scale-pizza.netlify.app
