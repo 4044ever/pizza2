@@ -1,0 +1,60 @@
+<div >
+{{ $type := .Get 0 }}
+{{ with (eq $type "warning") }}<div class=" bg-rose-500 text-gray-100 rounded-t-md p-2 font-extrabold">
+  <svg  class="inline-block" xmlns="http://www.w3.org/2000/svg"  width="18" height="18" viewBox="-0.000286102 -0.00000190735 576 512"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" fill="#ffffff"/></svg>
+   Warning!</div>
+  <div class=" bg-rose-100  text-gray-800 rounded-b-md p-2">
+{{ $.Inner }}</div>{{ end }}
+{{ with (eq $type "warning.de") }}<div class=" bg-rose-500 text-gray-100 rounded-t-md p-2 font-extrabold">
+  <svg  class="inline-block" xmlns="http://www.w3.org/2000/svg"  width="18" height="18" viewBox="-0.000286102 -0.00000190735 576 512"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" fill="#ffffff"/></svg>
+   Warnung!</div>
+<div class=" bg-rose-100  text-gray-800 rounded-b-md p-2">
+ {{ $.Inner }}</div>{{ end }}
+
+ {{ with (eq $type "note") }}<div class=" bg-cyan-500 text-gray-100 rounded-t-md p-2 font-extrabold"><svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="8 8 496 496">
+  <path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" fill="#ffffff"/>
+</svg> Note</div>
+  <div class=" bg-cyan-100  text-gray-800 rounded-b-md p-2">
+{{ $.Inner }}</div>{{ end }}
+{{ with (eq $type "note.de") }}<div class=" bg-cyan-500 text-gray-100 rounded-t-md p-2 font-extrabold"><svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="8 8 496 496">
+  <path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" fill="#ffffff"/>
+</svg> Notiz</div>
+<div class=" bg-cyan-100  text-gray-800 rounded-b-md p-2">
+ {{ $.Inner }}</div>{{ end }}
+
+ {{ with (eq $type "tip") }}<div class=" bg-green-500 text-gray-100 rounded-t-md p-2 font-extrabold">  
+  <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="8 8 496 496">
+    <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" fill="#ffffff"/>
+  </svg> Tip</div>
+  <div class=" bg-green-100  text-gray-800 rounded-b-md p-2">
+{{ $.Inner }}</div>{{ end }}
+{{ with (eq $type "tip.de") }}<div class=" bg-green-500 text-gray-100 rounded-t-md p-2 font-extrabold"> <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="8 8 496 496">
+  <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" fill="#ffffff"/>
+</svg> Tipp</div>
+<div class=" bg-green-100  text-gray-800 rounded-b-md p-2">
+ {{ $.Inner }}</div>{{ end }}
+
+ {{ with (eq $type "info") }}<div class=" bg-amber-500 text-gray-100 rounded-t-md p-2 font-extrabold">
+  <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="8 8 496 496">
+    <path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" fill="#ffffff"/>
+  </svg> Info</div>
+  <div class=" bg-amber-100  text-gray-800 rounded-b-md p-2">
+{{ $.Inner }}</div>{{ end }}
+{{ with (eq $type "info.de") }}<div class=" bg-amber-500 text-gray-100 rounded-t-md p-2 font-extrabold"> <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="8 8 496 496">
+  <path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" fill="#ffffff"/>
+</svg> Info</div>
+<div class=" bg-amber-100  text-gray-800 rounded-b-md p-2">
+ {{ $.Inner }}</div>{{ end }}
+
+ {{ with (eq $type "trivia") }}<div class=" bg-fuchsia-500 text-gray-100 rounded-t-md p-2 font-extrabold">
+  <svg  class="inline-block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="8 8 496 496">
+    <path d="M227.5,0C101.855,0,0,101.855,0,227.5S101.855,455,227.5,455S455,353.145,455,227.5S353.145,0,227.5,0z M303.514,146.486 c19.33,0,35,15.67,35,35s-15.67,35-35,35c-19.33,0-35-15.67-35-35S284.184,146.486,303.514,146.486z M151.486,146.486 c19.33,0,35,15.67,35,35s-15.67,35-35,35c-19.33,0-35-15.67-35-35S132.156,146.486,151.486,146.486z M227.5,370 c-59.42,0-113.171-37.504-133.752-93.325l28.148-10.378C138.15,310.381,180.589,340,227.5,340s89.35-29.619,105.604-73.703
+    l28.148,10.378C340.671,332.496,286.92,370,227.5,370z" fill="#ffffff"/></svg> Trivia</div>
+  <div class=" bg-fuchsia-100  text-gray-800 rounded-b-md p-2">
+{{ $.Inner }}</div>{{ end }}
+{{ with (eq $type "trivia.de") }}<div class=" bg-fuchsia-500 text-gray-100 rounded-t-md p-2 font-extrabold"><svg  class="inline-block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="8 8 496 496">
+  <path d="M227.5,0C101.855,0,0,101.855,0,227.5S101.855,455,227.5,455S455,353.145,455,227.5S353.145,0,227.5,0z M303.514,146.486 c19.33,0,35,15.67,35,35s-15.67,35-35,35c-19.33,0-35-15.67-35-35S284.184,146.486,303.514,146.486z M151.486,146.486 c19.33,0,35,15.67,35,35s-15.67,35-35,35c-19.33,0-35-15.67-35-35S132.156,146.486,151.486,146.486z M227.5,370 c-59.42,0-113.171-37.504-133.752-93.325l28.148-10.378C138.15,310.381,180.589,340,227.5,340s89.35-29.619,105.604-73.703
+  l28.148,10.378C340.671,332.496,286.92,370,227.5,370z" fill="#ffffff"/></svg> Trivia</div>
+<div class=" bg-fuchsia-100  text-gray-800 rounded-b-md p-2">
+ {{ $.Inner }}</div>{{ end }}
+</div>

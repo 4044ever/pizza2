@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hugo &amp; Tailwind 3.0 &amp; Pizza</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Hugo &amp; Tailwind 3.0 &amp; Pizza</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Feb 2022 21:16:28 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hard Rolls</title>
+      <link>/hard-rolls/</link>
+      <pubDate>Fri, 04 Feb 2022 21:16:28 +0800</pubDate>
+      
+      <guid>/hard-rolls/</guid>
+      <description>A German classic - Brötchen! The secret to very good ones is &lt;strong&gt;time&lt;/strong&gt; and a poolish.</description>
+    </item>
+    
+    <item>
+      <title>Brian&#39;s Baguettes</title>
+      <link>/brians-baguette/</link>
+      <pubDate>Thu, 23 Sep 2021 21:16:28 +0800</pubDate>
+      
+      <guid>/brians-baguette/</guid>
+      <description>There are many baguette recipes, many bad ones, many good ones. Here is one that I like&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Brötchen</title>
+      <link>/de/broetchen/</link>
+      <pubDate>Thu, 23 Sep 2021 13:16:28 +0000</pubDate>
+      
+      <guid>/de/broetchen/</guid>
+      <description>So mache ich derzeit meine klassischen Brötchen. Das Geheimrezept dabei ist &lt;strong&gt;Zeit&lt;/strong&gt; und ein Vorteig.</description>
+    </item>
+    
+    <item>
+      <title>Pizza Pizza Pizza!</title>
+      <link>/pizza/</link>
+      <pubDate>Sat, 18 Sep 2021 23:10:08 +0800</pubDate>
+      
+      <guid>/pizza/</guid>
+      <description>Your pizza dough calculator for Neapolitan style hand shaped pizza.</description>
+    </item>
+    
+    <item>
+      <title>Scalable Baking &amp; Hugo</title>
+      <link>/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/</guid>
+      <description>Some of the recipes I personally use. All are tested and working well. Of course you may need to adjust them slightly to your flour and your oven. Have fun and leave a comment if you like, or not like. </description>
+    </item>
+    
+  </channel>
+</rss>

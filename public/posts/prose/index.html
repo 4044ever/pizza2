@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="/css/page.css" as="style">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title itemprop="name">Prose | Hugo &amp; Tailwind 3.0 &amp; Pizza</title>
+<meta property="og:title" content="Prose | Hugo &amp; Tailwind 3.0 &amp; Pizza" />
+<meta name="twitter:title" content="Prose | Hugo &amp; Tailwind 3.0 &amp; Pizza" />
+<meta itemprop="name" content="Prose | Hugo &amp; Tailwind 3.0 &amp; Pizza" />
+<meta name="application-name" content="Prose | Hugo &amp; Tailwind 3.0 &amp; Pizza" />
+<meta property="og:site_name" content="" />
+<meta name="description" content="A test with @tailwindcss/typography &amp; Prose" />
+<meta itemprop="description" content="A test with @tailwindcss/typography &amp; Prose" />
+<meta property="og:description" content="A test with @tailwindcss/typography &amp; Prose" />
+<meta name="twitter:description" content="A test with @tailwindcss/typography &amp; Prose" />  
+<meta name="robots" content="index,follow">
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/style.min.c595000f6f87de29968d65b528c3b72d7df3f34c45ad886eaec49288810180f3.css" integrity="sha256-xZUAD2+H3imWjWW1KMO3LX3z80xFrYhursSSiIEBgPM="/>
+
+
+  
+</head>
+<body>
+  <div class="bg-gray-100 ">
+    <div class="flex flex-col m-auto h-auto max-w-screen-2xl">
+      <header class="bg-white">
+     <div class="py-3">
+        <a href="/">
+        <div class="text-4xl font-bold px-0 ml-2">
+            
+        </div>
+        <div class="text-xl font-simibold py-2 ml-2 ">
+              
+        </div>
+        </a>
+        <div class="py-3 flex items-center justify-center">
+            <a href="/">
+          <picture>
+                <source srcset="/uploads/semmellogo.webp" type="image/webp">
+                <source srcset="/uploads/semmellogo.jpg" type="image/jpeg">
+                <img src="/uploads/semmellogo.jpg" alt="Dark Raw" width="2000" height="256">
+            </picture>
+        </a>
+        </div>
+    </div>
+</header>
+      
+<nav class="bg-gray-900 flex text-gray-100 text-lg inline-block z-50">
+	<ul class="flex">
+		<li class="hover:bg-gray-800 p-4 ">
+			<a class="" href="/">
+				
+				<span class="">Home</span>
+				
+			</a>
+		</li>
+		<li class="hover:bg-gray-800 p-4 ">
+			<a class="" href="/hugo">
+				
+				<span class="">Hugo</span>
+				
+			</a>
+		</li>
+		<li class="hover:bg-gray-800 p-4 ">
+			<a class="" href="/about">
+				
+				<span class="">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+
+      <div class="md:flex clearfix ">
+        <div class="clearfix flex-grow md:w-5/6 bg-white rounded-md mr-2 my-2 p-5">
+         
+
+<div class="mx-5 prose max-w-fit px-0 lg:px-16">
+  <h1>Prose</h1>
+</div>
+
+
+<article class="mt-4 mx-5 prose max-w-fit px-0 lg:px-16 ">
+  <h2 id="a-test-with-tailwind-prose-classes">A Test with Tailwind Prose Classes</h2>
+<p>With the new <a href="https://tailwindcss.com/docs/typography-plugin" target="_blank">@tailwindcss/typography</a> module I can add prose modifiers that will render to the output HTML. This allows you to style HTML tags individually with i.e. <code>prose-h*:text-color-*00</code></p>
+<h1 id="this-is-a-h1-header">this is a H1 header</h1>
+<h2 id="this-is-a-h2-header">this is a H2 header</h2>
+<h3 id="this-is-a-h3-header">this is a H3 header</h3>
+<h4 id="this-is-a-h4-header">this is a H4 header</h4>
+<p>You can change link colors too and define hover with <code>prose prose-a:text-pink-700 hover:prose-a:text-cyan-700</code> - example: 
+<a href="https://gohugo.io" target="_blank">gohugo.io</a></p>
+<h5 id="note-that-in-standard-prose-code-snippets-show-the--for-some-reason-so-in-standard-prose-you-get">Note that in standard prose code snippets show the ` for some reason. So in standard prose you get:</h5>
+<p>`<code>&lt;code&gt;Something&lt;/code&gt;</code>`</p>
+<p>But I want want:</p>
+<p><code>&lt;code&gt;Something&lt;/code&gt;</code></p>
+<p>So I modified the <code>tailwind.config.js</code> to:</p>
+<pre><code>module.exports = {
+content: ['./layouts/**/*.html'],
+theme: {
+    extend: {
+        typography: {
+            DEFAULT: {
+                css: {
+                    &quot;code::before&quot;: {content: ''},
+                    &quot;code::after&quot;: {content: ''}
+                }
+            }
+        }
+    }
+},
+plugins: [
+    require('@tailwindcss/typography'),
+],
+}
+</code></pre>
+<p>Remove those extra lines you want the `<code>ticks</code>`. Tailwind uses them on their website.</p>
+<p>Click for more about: <a href="https://tailwindcss.com/docs/typography-plugin" target="_blank">@tailwindcss/typography</a></p>
+<h3 id="-the-end-">~~ The End ~~</h3>
+
+</article>
+
+
+        </div>
+
+        <div class="bg-white rounded-md w-fixed text-2xl text-left my-2 ">
+
+    <div class="p-3">
+        Recent Posts
+    </div>
+
+    <div class="">
+        <div class="">
+
+            <div class="text-lg text-left text-blue-700 px-3">
+                
+                <div class="mb-3"><a class="" href="/hard-rolls/">Hard Rolls</a><br>
+                </div>
+                
+                <div class="mb-3"><a class="" href="/posts/prose/">Prose</a><br>
+                </div>
+                
+                <div class="mb-3"><a class="" href="/oat-bread/">Oat Bread</a><br>
+                </div>
+                
+                <div class="mb-3"><a class="" href="/brians-baguette/">Brian&#39;s Baguettes</a><br>
+                </div>
+                
+                <div class="mb-3"><a class="" href="/de/broetchen/">Brötchen</a><br>
+                </div>
+                
+                <div class="mb-3"><a class="" href="/pizza/">Pizza Pizza Pizza!</a><br>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+      </div>
+      <footer class="max-h-14 bg-gray-800 w-fixed rounded-t-md">
+     <div class="flex text-gray-100 justify-center">&copy; 2022 - Bake the Gloom away! </div>
+     <div>
+          
+     </div>
+</footer>
+
+      
+
+
+
+
+
+
+
+<div class="js-cookie-banner fixed sticky bottom-5 bg-black rounded-xl mx-28 h-16">
+    <p class="text-gray-100 text-center">
+      This site use 🍪cookies. Read more in <a class="text-lg font-bold text-blue-200 hover:underline" href="/cookies-policy/">Cookies Policy</a>.
+    </p>
+    <button class="js-cookie-btn absolute bottom-0 right-0  bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-12 mr-14 mb-1 rounded cursor-pointer">Ok!</button>
+  </div>
+  <script src="/js/cookie.js" async></script>
+
+  
+
+    </div>
+  </div>
+</body>
+</html>

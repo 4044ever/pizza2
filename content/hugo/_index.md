@@ -1,7 +1,6 @@
 ---
 title: Bake the Hugo
 draft: false
-url: /hugo
 tags: null
 keywords:
     - hugo
